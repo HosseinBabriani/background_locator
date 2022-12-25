@@ -4,8 +4,12 @@ version '1.0-SNAPSHOT'
 buildscript {
     ext.kotlin_version = '1.4.21'
     repositories {
-        google()
-        jcenter()
+    
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots' }
     }
 
     dependencies {
@@ -16,8 +20,12 @@ buildscript {
 
 rootProject.allprojects {
     repositories {
-        google()
-        jcenter()
+    
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots' }
     }
 }
 
